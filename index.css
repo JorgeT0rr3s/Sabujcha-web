@@ -1,6 +1,10 @@
 body{
     padding: 0%;
 }
+/* esilos de listas */
+ul{
+    list-style: none;
+}
 /* Estilos menú hamburguesa */
 .respmenu a {
     color: inherit;
@@ -58,7 +62,7 @@ body{
     display: none;
 }
 
-/* Estilos header */
+/* inicio Estilos header */
 header #container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -76,8 +80,14 @@ header #container{
 #container .barras .car button{
     display: block;
     width: 50px; height: 50px;
+    border: none;
+    background-color: white;
 }
-#container .barras .car .fa-regular .fa-cart-shopping .fa-flip-horizontal{
+#container .barras .car .carito{
     display: block;
+    width: 100%; height: 100%;
     
 }
+
+
+/* Fin estilos header */
