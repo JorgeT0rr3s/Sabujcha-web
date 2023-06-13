@@ -1,6 +1,20 @@
 body{
     padding: 0%;
 }
+/* Estilos de los titulos y texto */
+h1{
+    font-family:sans-serif;
+    font-size: 3em;
+    font-weight: 400;
+    
+}
+a{
+
+    font-size: 1.5em;
+    color: black;
+    font-weight: bold;
+    font-family: 'Work Sans';
+}
 /* esilos de listas */
 ul{
     list-style: none;
@@ -12,13 +26,11 @@ ul{
     padding: 0;
 }
 
-body{
-    font-family: Arial;
-}
+
 
 
 .nav{
-    background-color: #830248;
+    background-color: #ffffff;
 
     --img1: scale(1);
     --img2: scale(0);
@@ -33,13 +45,13 @@ body{
 }
 
 .nav__container{
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
-    height: 70px;
+    height: 100%;
     display: grid;
     grid-template-columns: max-content max-content;
     grid-template-areas: "title img";
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
     overflow: hidden;
@@ -141,49 +153,6 @@ body{
 }
 
 
-.respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
-    position: absolute;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    right: 0;
-    top: 0;
-    width: 48px;
-    height: 48px;
-}
-
-.respmenu .fa-bars, .respmenu .fa-times {
-    font-size: 48px;
-    pointer-events: none;
-}
-
-.respmenu input[type="checkbox"] {
-    opacity: 0;
-}
-
-.respmenu {
-    color: black;
-    position: relative;
-    background: #ffffff;
-    min-height: 48px;
-}
-
-.respmenu nav {
-    display: none;
-}
-
-.respmenu input:checked ~ nav {
-    display: block;
-}
-
-.respmenu input:checked ~ .fa-bars {
-    display: none;
-}
-
-.respmenu input:not(:checked) ~ .fa-times {
-    display: none;
-}
-
 /* inicio Estilos header */
 header #container{
     display: grid;
@@ -195,9 +164,18 @@ header #container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
-
+/* estilos cambio de moneda */
+#container .tipo{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Estilos carrito de compras */
+#container .barras .car{
+    display: flex;
+    justify-content: center;
+}
 
 #container .barras .car button{
     display: block;
@@ -207,9 +185,10 @@ header #container{
 }
 #container .barras .car .carito{
     display: block;
-    width: 100%; height: 100%;
+    width: 70%; height: 70%;
     
 }
+/* estilos logo */
 #container .logo{
     margin: 0%;
     display: flex;
@@ -219,3 +198,25 @@ header #container{
 }
 
 /* Fin estilos header */
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+    )
+    ,url(Imagenes/slider-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center ;
+}
+#hero .container{
+    padding: 10%;
+}
+
