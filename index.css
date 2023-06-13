@@ -3,7 +3,7 @@ body{
 }
 /* Estilos de los titulos y texto */
 h1{
-    font-family:sans-serif;
+    font-family:'Playfair display';
     font-size: 3em;
     font-weight: 400;
     
@@ -200,6 +200,7 @@ header #container{
 /* Fin estilos header */
 
 #hero{
+    margin-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -218,5 +219,50 @@ header #container{
 }
 #hero .container{
     padding: 10%;
+    
 }
 
+#promocion .banner1 {
+    width: 90%;
+    height:300px;
+    background-image: url(Imagenes/banner-1.png);
+    background-repeat: no-repeat;
+    background-position:center center ;
+    background-size: cover;
+    max-width: 100%;
+    text-align: left;
+    padding: 60px;
+    
+}
+#promocion .banner2 {
+    width: 90%;
+    height:300px;
+    background-image: url(Imagenes/banner-2.png);
+    background-repeat: no-repeat;
+    background-position:center center ;
+    background-size: cover;
+    max-width: 100%;
+    text-align: left;
+    padding: 60px;
+    
+}
+#promocion .container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+#promocion .container h3{
+    font-size: 3em;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-weight: 300;
+    color: #529F0F;
+    font-family: 'Playfair display';
+}
+#promocion .container h5{
+    font-size: 1em;
+    margin-bottom: 30px;
+    
+}
