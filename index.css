@@ -6,7 +6,21 @@ h1{
     font-family:'Playfair display';
     font-size: 3em;
     font-weight: 400;
-    
+    color: #333333;
+}
+h3{
+    font-size: 3em;
+    font-weight: 300;
+    font-family: 'Playfair display'; 
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+h6{
+    font-family: 'Playfair display'; 
+    font-weight: 500;
+    font-size: 2em;
+    margin-top: 15px;
+    color:  #575757;
 }
 a{
 
@@ -254,15 +268,21 @@ header #container{
     gap: 20px;
 }
 #promocion .container h3{
-    font-size: 3em;
-    margin-bottom: 30px;
-    margin-top: 30px;
-    font-weight: 300;
     color: #529F0F;
-    font-family: 'Playfair display';
 }
 #promocion .container h5{
     font-size: 1em;
     margin-bottom: 30px;
     
+}
+
+#latest .container{
+    padding: 5%;
+    background-color: rgba(172, 168, 168, 0.473);
+}
+
+#latest .encabezado{
+    text-align: center;
+    padding: 5%;
+    line-height: 2em;
 }
