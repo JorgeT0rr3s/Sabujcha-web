@@ -1,8 +1,21 @@
-/* .Latest_News{
+.Contenedor_Latest_News{
     display: flex;
     justify-content: space-between;
-} */
+}
 
 ul {
     list-style: none;
+}
+
+.Latest_News{
+    padding: 100px;
+}
+
+.Latest_News img{
+    width: 300px;
+    height: 220px;
+}
+
+#Titulo_Lastest_News{
+    text-align: center;
 }
