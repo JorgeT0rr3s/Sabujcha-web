@@ -2,14 +2,19 @@ ul {
     list-style: none;
 }
 
-.p {
+
+li, a, p{
     font-family: 'Lora', serif;
 }
 
 .Contenedor_Latest_News{
     display: flex;
     justify-content: space-between;
-    gap: 2px;
+    row-gap: 2%;
+}
+
+.Contenedor_Latest_News h4 {
+    font-family: 'Work Sans', sans-serif;
 }
 
 .Latest_News{
