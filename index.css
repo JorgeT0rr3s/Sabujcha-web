@@ -1,6 +1,3 @@
-
-
-
 ul {
     list-style: none;
 }
@@ -51,14 +48,34 @@ ul {
 
 .banda_footer {
     display: grid;
-    grid-template-columns: auto 50px auto auto auto ;
+    outline: 6px solid yellow;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    align-items: center;
     gap: 10px;
+    margin-left: 10px;
 }
 
-.banda_footer img {
-    height: 45px !important;
-    width: 45px !important;
+#PayPal{
+    height: 50px;
+    width: 80px;
 }
+
+#American{
+    height: 80px;
+    width: 80px;
+}
+
+#Amazon{
+    height: 50px;
+    width: 80px;
+}
+
+#Visa{
+    height: 50px;
+    width: 80px;
+}
+
+
 
 
 .Contenedor_Latest_News h4{
