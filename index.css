@@ -159,42 +159,42 @@ ul{
 
 
 /* inicio Estilos header */
-header #container{
+.container_header{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0%;
     width: 100%;
 }
-#container .barras{
+.container_header .barras{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 /* estilos cambio de moneda */
-#container .tipo{
+.container_header .tipo{
     display:flex;
     align-items: center;
     justify-content: center;
 }
 
 /* Estilos carrito de compras */
-#container .barras .car{
+.container_header .barras .car{
     display: flex;
     justify-content: center;
 }
 
-#container .barras .car button{
+.container_header .barras .car button{
     display: block;
     width: 50px; height: 50px;
     border: none;
     background-color: white;
 }
-#container .barras .car .carito{
+.container_header .barras .car .carito{
     display: block;
     width: 70%; height: 70%;
     
 }
 /* estilos logo */
-#container .logo{
+.container_header .logo{
     margin: 0%;
     display: flex;
     align-items: center;
@@ -204,7 +204,7 @@ header #container{
 
 /* Fin estilos header */
 
-#hero{
+.inicio{
     margin-bottom: 50px;
     display: flex;
     align-items: center;
@@ -222,12 +222,12 @@ header #container{
     background-size: cover;
     background-position: center center ;
 }
-#hero .container{
+.inicio .container_inicio{
     padding: 10%;
     
 }
 
-#promocion .banner1 {
+.promocion .banner1 {
     width: 90%;
     height:300px;
     background-image: url(Imagenes/banner-1.png);
@@ -239,7 +239,7 @@ header #container{
     padding: 60px;
     
 }
-#promocion .banner2 {
+.promocion .banner2 {
     width: 90%;
     height:300px;
     background-image: url(Imagenes/banner-2.png);
@@ -251,49 +251,23 @@ header #container{
     padding: 60px;
     
 }
-#promocion .container{
+.promocion .container{
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
 }
-#promocion .container h3{
+.promocion .container h3{
     color: #529F0F;
 }
-#promocion .container h5{
+.promocion .container h5{
     font-size: 1em;
     margin-bottom: 30px;
     
 }
 
-#latest .container{
-    padding: 5%;
-    background-color: rgba(172, 168, 168, 0.473);
+/* Estilos para Desktop */
+@media screen and (min-width: 768px){
+    
 }
-
-#latest .encabezado{
-    text-align: center;
-    padding: 5%;
-    line-height: 2em;
-}
-
-#gregory .container{
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap:10px;
-    text-align: center;
-
-}
-#gregory .container img{
-    width: 150%;
-    height: 150%;
-}
-#gregory .container i{
-    font-size: 1.5em;
-}
-
-/* Responsive para desktop */
