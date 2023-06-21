@@ -2,6 +2,10 @@ ul {
     list-style: none;
 }
 
+.p {
+    font-family: 'Lora', serif;
+}
+
 .Contenedor_Latest_News{
     display: flex;
     justify-content: space-between;
@@ -17,8 +21,8 @@ ul {
 }
 
 .Latest_News img{
-    width: 310px;
-    height: 330px;
+    width: 100%;
+    /* height: 330px; */
 }
 
 .Latest_News h2 {
@@ -35,6 +39,7 @@ ul {
 .imagenes_footer{
     display: flex;
     justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .listado_footer{
@@ -48,7 +53,6 @@ ul {
 
 .banda_footer {
     display: grid;
-    outline: 6px solid yellow;
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
     align-items: center;
     gap: 10px;
