@@ -161,14 +161,11 @@ ul{
 /* inicio Estilos header */
 .container_header{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
     padding: 0%;
     width: 100%;
 }
-.container_header .barras{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
+
 /* estilos cambio de moneda */
 .container_header .tipo{
     display:flex;
@@ -182,13 +179,13 @@ ul{
     justify-content: center;
 }
 
-.container_header .barras .car button{
+.car button{
     display: block;
     width: 50px; height: 50px;
     border: none;
     background-color: white;
 }
-.container_header .barras .car .carito{
+.carito{
     display: block;
     width: 70%; height: 70%;
     
@@ -269,5 +266,12 @@ ul{
 
 /* Estilos para Desktop */
 @media screen and (min-width: 768px){
-    
+    .nav__icon{
+        display: none;
+    }
+
+    .container_header{
+        display: grid;
+        
+    }
 }
