@@ -107,11 +107,18 @@ li, a, p{
     color: rgb(0, 0, 0);
 }
 
-@media screen and (min-width: 840px) {
+@media screen and (min-width: 768px) {
     .Latest_News img{
         width: 70%;
         height: 50%; 
-        font-size: 50%;
+        font-size: 40%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .Latest_News img{
+        width: 65%;
+        height: 70%; 
     }
 
 }
@@ -121,17 +128,40 @@ li, a, p{
         flex-direction: column; 
         justify-content: center; /* Centra horizontalmente */
         align-items: center; /* Centra verticalmente */
+        margin: 1%;
         
     }
 
     .listado_footer{
         grid-template-columns: 1fr;
-        gap: 10%;
+        gap: 1%;
+        margin: 0;
     }
 
-    .banda_footer{
-        grid-template-columns: 1fr 1fr 1fr 1fr; 
-        grid-template-rows: 1fr 1fr; 
-        justify-items: center;
+    .Latest_News img{
+        width: 100%;
+        height: 100%; 
     }
+
+    li {
+        margin-bottom: 10%; /* Espacio entre los elementos li */
+    }
+
+    .banda_footer {
+        display: grid;
+        grid-template-rows: auto; /* Una fila de altura automática para el párrafo */
+        grid-template-columns: auto repeat(4, 1fr); /* Una columna para el párrafo y cuatro columnas de ancho fraccionado para las imágenes */
+        gap: 5%; /* Espacio entre elementos */
+    }
+    
+    .banda_footer p {
+        grid-column: 1 / -1; /* El párrafo ocupará todas las columnas disponibles */
+    }
+    
+    .banda_footer img {
+        width: 100%; /* Ajustar el ancho de las imágenes al 100% del contenedor */
+    }
+
+    .imagenes_footer img:nth-child(n + 2) {
+        display: none;
 }
