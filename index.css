@@ -115,7 +115,7 @@ li, a, p{
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1100px) {
     .Latest_News img{
         width: 65%;
         height: 70%; 
@@ -124,6 +124,12 @@ li, a, p{
 }
 
 @media screen and (max-width: 768px) {
+
+    .Latest_News h2 {
+        top: 0.5%;
+    }
+
+
     .Contenedor_Latest_News, .imagenes_footer{
         flex-direction: column; 
         justify-content: center; /* Centra horizontalmente */
