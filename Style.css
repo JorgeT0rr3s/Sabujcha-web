@@ -14,15 +14,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: playfair display;
 }
 
 .container {
     width: 80vw;
-    height: 90vh;
+    height: 120vh;
     display: flex;
     flex-direction: column;
-    background-color: rgb(209, 208, 208);
+    background-color: rgb(235, 234, 234);
 
 }
 
@@ -33,19 +32,20 @@ body {
 
 .inicio p {
     text-align: center;
-    
+    position: relative;
+    flex-direction: column;
 }
 
 .cardContainer {
     display: flex;
     justify-content: space-around;
-    gap:90px;
+    gap:50px;
 
     flex-wrap: wrap;
 }
 
 .card {
-    border-radius: 10px;
+    border-radius: 5px;
     font-weight: bold;
    
     position: relative;
@@ -55,17 +55,17 @@ body {
     width: 400px;
     height: 600px;
    
-
 }
 
 .card img {
-    width: 100%;
+    width: 90%;
 }
 
 
 .container h1 {
-    padding: 15px;
+    padding: 35px;
     text-align: center;
+
 }
 
 .card .texto {
@@ -74,10 +74,16 @@ body {
     flex-direction: column;
 }
 
-h1, h3 {
-    font-family: 'Playfair Display', serif;;
-}
 
 .precio {
     margin: 0;
+}
+
+h3 {
+font-family: 'Work Sans', sans-serif;
+color: rgb(122, 121, 121);
+}
+
+h3 p {
+    color: darkgrey;
 }
