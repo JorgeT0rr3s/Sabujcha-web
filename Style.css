@@ -22,6 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: rgb(235, 234, 234);
+    font-size: small;
 
 }
 
@@ -31,9 +32,13 @@ body {
 }
 
 .inicio p {
+    
     text-align: center;
     position: relative;
     flex-direction: column;
+    font-family: 'Lora', serif;
+    font-size: 25px;
+    
 }
 
 .cardContainer {
@@ -42,6 +47,7 @@ body {
     gap:50px;
 
     flex-wrap: wrap;
+    font-size:  22px;
 }
 
 .card {
@@ -65,7 +71,8 @@ body {
 .container h1 {
     padding: 35px;
     text-align: center;
-
+    font-size: 75px;
+    color: #494949;
 }
 
 .card .texto {
@@ -77,6 +84,7 @@ body {
 
 .precio {
     margin: 0;
+    
 }
 
 h3 {
@@ -84,6 +92,6 @@ font-family: 'Work Sans', sans-serif;
 color: rgb(122, 121, 121);
 }
 
-h3 p {
-    color: darkgrey;
+h3, p {
+    font-family: 'Work Sans', sans-serif;
 }
