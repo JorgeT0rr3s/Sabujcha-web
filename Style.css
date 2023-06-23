@@ -18,14 +18,14 @@ body {
 
 .container {
     width: 80vw;
-    height: 120vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     background-color: rgb(235, 234, 234);
 
 }
 
-.inicio {
+.inicio2 {
     display: flex;
     flex-direction: column;
 }
