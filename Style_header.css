@@ -162,3 +162,53 @@
 }
 
 
+
+
+
+.inicio {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)), url(Imagenes/slider-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.container_inicio {
+    padding: 10%;
+
+}
+
+.banner1 {
+    background-image: url(Imagenes/banner-1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+}
+.banner_title{
+    color: #529F0F;
+    font-size: 2.3em;
+}
+
+
+.banner2 {
+    background-image: url(Imagenes/banner-2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.container_banner{
+    padding:0 10%;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:40px;
+}
