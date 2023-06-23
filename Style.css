@@ -17,6 +17,8 @@ body {
 }
 
 .container {
+    width: 80vw;
+    height: 120vh;
     width: 100vw;
     height: auto;
     display: flex;
