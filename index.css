@@ -8,6 +8,7 @@ a,
 p {
     font-family: 'Lora', serif;
     font-size: 100%;
+    
 }
 
 
@@ -52,178 +53,7 @@ ul {
     list-style: none;
 }
 
-/* Estilos menú hamburguesa */
-* {
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0;
-}
-
-
-
-
-.nav {
-    background-color: #ffffff;
-
-    --img1: scale(1);
-    --img2: scale(0);
-}
-
-.nav:has(.dropdown:target) {
-    --img1: scale(0);
-    --img2: scale(1);
-
-    --clip: inset(0 0 0 0);
-
-}
-
-.nav__container {
-    width: 100%;
-    margin: 0 auto;
-    height: 100%;
-    display: grid;
-    grid-template-columns: max-content max-content;
-    grid-template-areas: "title img";
-    justify-content: center;
-    align-items: center;
-
-    overflow: hidden;
-}
-
-.nav__title {
-    color: #329c32;
-    grid-area: title;
-}
-
-
-.nav__menu {
-    grid-area: img;
-    position: relative;
-    z-index: 10;
-
-    transform: var(--img1);
-}
-
-.nav__menu--second {
-    transform: var(--img2);
-}
-
-.nav__icon {
-    width: 30px;
-    display: block;
-}
-
-.dropdown {
-    position: absolute;
-    background-color: #161515c0;
-    width: 75%;
-    max-width: 300px;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    padding: 1em;
-
-    display: grid;
-    align-content: center;
-    gap: 1rem;
-
-    overflow-y: auto;
-
-
-    clip-path: var(--clip, inset(0 0 100% 100%));
-    transition: clip-path .5s;
-}
-
-.dropdown__list {
-    list-style: none;
-}
-
-.dropdown__link {
-    color: #529F0F;
-    padding: 1em .7em;
-    text-decoration: none;
-
-    display: flex;
-    align-items: center;
-    gap: .6rem;
-
-    position: relative;
-    background-color: var(--bg, transparent);
-    border-radius: 6px;
-}
-
-.dropdown__list:has( :checked) {
-    --rows: 1fr;
-    --rotate: rotate(180deg);
-    --bg: #28303B;
-}
-
-.dropdown__sub {
-    overflow: hidden;
-
-}
-
-.dropdown__li {
-    width: 85%;
-    list-style: none;
-    margin-left: auto;
-}
-
-.dropdown__anchor {
-    padding: 1em 0;
-    display: block;
-    color: #B6BABE;
-    text-decoration: none;
-}
-
-
-/* inicio Estilos header */
-.container_header {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    padding: 0%;
-    width: 100%;
-}
-
-/* estilos cambio de moneda */
-.container_header .tipo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Estilos carrito de compras */
-.container_header .barras .car {
-    display: flex;
-    justify-content: center;
-}
-
-.car button {
-    display: block;
-    width: 50px;
-    height: 50px;
-    border: none;
-    background-color: white;
-}
-
-.carito {
-    display: block;
-    width: 70%;
-    height: 70%;
-
-}
-
-/* estilos logo */
-.container_header .logo {
-    margin: 0%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0%;
-}
-
-/* Fin estilos header */
-
+    
 .inicio {
     margin-bottom: 50px;
     display: flex;
@@ -421,16 +251,4 @@ ul {
     font-size: 1em;
     margin-bottom: 30px;
 
-}
-
-/* Estilos para Desktop */
-@media screen and (min-width: 768px) {
-    .nav__icon {
-        display: none;
-    }
-
-    .container_header {
-        display: grid;
-
-    }
 }
