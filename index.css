@@ -21,8 +21,8 @@ li, a, p{
     background-size: auto;
     background-position: center;
     padding: 7%;
-    margin: 2%;
     position: relative;
+    margin: 4%;
 }
 
 .Latest_News img{
@@ -123,7 +123,7 @@ li, a, p{
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px){
 
     .Latest_News h2 {
         top: 0.5%;
@@ -170,4 +170,9 @@ li, a, p{
 
     .imagenes_footer img:nth-child(n + 2) {
         display: none;
+    }
+
+    .Latest_News{
+        margin: 2%;
+    }
 }
