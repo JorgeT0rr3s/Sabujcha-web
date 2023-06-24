@@ -2,6 +2,17 @@ ul {
     list-style: none;
 }
 
+.Contenedor_Latest_News_Grande h4{
+    font-family: 'Work Sans', sans-serif;
+    color: #529F0F;
+    text-decoration: underline;
+    font-style: italic;
+}
+.Contenedor_Latest_News_Grande a{
+    font-family: 'Lora', serif;
+    font-size: 100%;
+    color: black;
+}
 
 li, a, p{
     font-family: 'Lora', serif;
@@ -117,21 +128,41 @@ li, a, p{
 }
 
 @media screen and (max-width: 768px) {
-    .Contenedor_Latest_News, .imagenes_footer{
+    .Contenedor_Latest_News_Grande, .imagenes_footer{
         flex-direction: column; 
         justify-content: center; /* Centra horizontalmente */
         align-items: center; /* Centra verticalmente */
         
     }
-
+    .imagenes_footer img:not(:first-child) {
+        display: none;
+    }
+    .Contenedor_Latest_News_Grande img{
+        width: 100% ;
+        height: 100%;
+    }
+    .Contenedor_Latest_News_Grande h2{
+        margin-top: -60px;
+    }
     .listado_footer{
         grid-template-columns: 1fr;
-        gap: 10%;
+        gap: 0%;
     }
 
-    .banda_footer{
-        grid-template-columns: 1fr 1fr 1fr 1fr; 
-        grid-template-rows: 1fr 1fr; 
-        justify-items: center;
-    }
+.banda_footer {
+  display: grid;
+  grid-template-rows: auto auto; /* Primera fila se ajusta automáticamente, segunda fila se ajusta automáticamente */
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas con el mismo ancho */
+  gap: 10px; /* Espacio entre las imágenes */
 }
+
+.first-element {
+  grid-row: 1; /* El primer elemento ocupa la primera fila */
+  grid-column: 1 / -1; /* Ocupa todas las columnas disponibles */
+}
+
+.second-row {
+  grid-row: 2; /* Los elementos de la segunda fila ocupan la segunda fila */
+  grid-column: 1 / -1; /* Ocupan todas las columnas disponibles */
+}
+    }
