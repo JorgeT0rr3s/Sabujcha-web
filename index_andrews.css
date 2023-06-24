@@ -117,7 +117,7 @@ li, a, p{
 }
 
 @media screen and (max-width: 768px) {
-    .Contenedor_Latest_News, .imagenes_footer{
+    .Contenedor_Latest_News_Grande, .imagenes_footer{
         flex-direction: column; 
         justify-content: center; /* Centra horizontalmente */
         align-items: center; /* Centra verticalmente */
