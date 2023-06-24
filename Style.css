@@ -6,15 +6,9 @@ body {
 }
 
 .container {
-    width: 80vw;
-    height: 120vh;
-    width: 100vw;
-    height: auto;
-    display: flex;
-    flex-direction: column;
     background-color: rgb(235, 234, 234);
     font-size: small;
-
+    margin: 2%;
 }
 
 .inicio2 {
@@ -35,29 +29,20 @@ body {
 }
 
 .cardContainer {
-    display: flex;
-    justify-content: space-around;
-    gap:50px;
-
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 5%;
     flex-wrap: wrap;
     font-size:  22px;
+    padding: 5%;
+    
 }
 
-.card {
-    border-radius: 5px;
-    font-weight: bold;
-   
-    position: relative;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center center;
-    width: 400px;
-    height: 600px;
-   
-}
 
 .card img {
-    width: 90%;
+    width: 100%;
+    height: 50%;
 }
 
 
@@ -68,14 +53,4 @@ body {
     color: #494949;
 }
 
-.card .texto {
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-}
 
-
-.precio {
-    margin: 0;
-    
-}
