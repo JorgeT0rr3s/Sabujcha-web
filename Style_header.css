@@ -12,14 +12,12 @@
     display: block;
 }
 .nav1{
-    height: 100%;
-    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    margin:0;
-    padding: 0;
+    align-content: center;
 }
+
 .bar-btn{
     cursor: pointer;
     margin-right: 30px;
@@ -37,6 +35,7 @@
     background: #161515c0;
     text-align: center;
     transition: all .5s;
+    font-size: 80%;
 }
 .dropdown__list{
     display: none;
