@@ -32,6 +32,7 @@ h2{
     color: #529F0F;
     font-weight: bold;
     font-size: 220%;
+    font-weight: bold;
 
 }
 
@@ -52,6 +53,25 @@ s{
 
 ul {
     list-style: none;
+}
+
+.Latest_Products{
+    background-image: url(Imagenes/bg-1.jpg);
+    margin: 2%;
+    padding: 2%;
+    text-align: center;
+}
+
+.ima_Latest_Products{
+    display: flex;
+    justify-content:space-around;
+    gap: 1%;
+    padding: 1%;
+}
+
+.ima_Latest_Products img{
+    width: 80%;
+    height: 60%;
 }
 .Contenedor_Latest_News_Grande{
     display: flex;
