@@ -73,6 +73,36 @@ ul {
     width: 80%;
     height: 60%;
 }
+
+.image_pro , .card{
+    position: relative;
+}
+
+.circulo{
+    position: absolute;
+    width: 15%;
+    height: 12%;
+    border-radius: 50%;
+    background-color: #529F0F;
+    top: 1%;
+    left: 12%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70%;
+    font-weight: bold;
+    font-family: 'Lora', serif;
+}
+
+.circulo--card{
+    width: 15%;
+    height: 10%;
+    top: 1%;
+    left: 5%;
+    font-size: 50%;
+}
+
 .Contenedor_Latest_News_Grande{
     display: flex;
     justify-content: space-between;
