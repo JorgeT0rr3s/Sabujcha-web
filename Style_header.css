@@ -11,9 +11,35 @@
     width: 30px;
     display: block;
 }
+
+  /* ESTILOS CAMBIO DE MONEDA */
+.container_header .tipo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.moneda {
+    padding: 10px;
+    font-size: 0.8;
+    border: none;
+    background: none;
+    color: #000;
+    width: auto;
+    cursor: pointer;
+}
+
+.moneda:hover {
+    background: #ddd;
+}
+
+.moneda:focus {
+    outline: none;
+    background: none;
+}
+
 .nav1{
     display: flex;
-    justify-content: flex-end;
+    justify-content:space-between;
     align-items: center;
     align-content: center;
 }
@@ -62,11 +88,12 @@
     
 }
 
-/* Responsive Desktop */
+/* Responsive Desktop  HEADER */
 @media screen and (min-width: 768px){
     .header1{
         width: 100%;
         height: 75px;
+        padding-left: 5vw;
     }
     .nav1{
         height: 100%;
@@ -81,30 +108,29 @@
     
     .nav-menu{
         position: relative;
-        margin-left:0;
         display: flex;
         width: 100%;
-        height: 70px;
         top: 0; 
         background: none;
         transition: none;
-        text-align: center;
-        justify-content: center;
+        text-align: right;
         align-items: center;
-        flex-wrap: nowrap;
-        gap: 10px;
+        gap: 15px;
+        max-width: none;
         
     }
     .dropdown__list{
         display: flex;
         transition: none;
-        justify-content: center;
+        justify-content:flex-start;
         align-items: center;
+        line-height: normal;
+        margin: 0;
     }
     .dropdown-link{
         text-decoration: none;
         margin: 5px;
-        font-size: 0.8em;
+        font-size:80%;
         color: rgb(0, 0, 0);
         font-weight:bold;
         transition: none;
@@ -132,14 +158,6 @@
     padding: 0%;
     width: 100%;
 }
-
-/* estilos cambio de moneda */
-.container_header .tipo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 /* Estilos carrito de compras */
 .container_header .barras .car {
     display: flex;
@@ -162,7 +180,12 @@
 }
 
 
+/* FIN ESTILOS DEL HEADER*/
 
+
+
+
+/* ESTILOS SECCION DE INICIO */
 
 
 .inicio {
@@ -179,18 +202,24 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    max-width: 100%;
 }
 
 .container_inicio {
     padding: 10%;
 
 }
+/* FIN ESTILOS SECCION INICIO */
 
+/* ESTILOS SECCION PROMOCION */
 .banner1 {
     background-image: url(Imagenes/banner-1.png);
+    height: 100%;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-size: cover;
+    padding-bottom: 10%; 
+    width: 100%;
 
 }
 .banner_title{
@@ -202,8 +231,10 @@
 .banner2 {
     background-image: url(Imagenes/banner-2.png);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-size: cover;
+    padding-bottom: 10%; 
+    width: 100%;
 }
 
 .container_banner{
@@ -211,4 +242,25 @@
     display:grid;
     grid-template-columns: repeat(2, 1fr);
     gap:40px;
+}
+
+@media screen and (max-width: 640px) {
+    .container_banner{
+        padding:0 10%;
+        display:flex;
+        flex-direction: column;
+        gap:40px;
+    }
+
+}  
+/* FIN ESTILOS SECCION PROMOCION */
+
+/* ESTILOS SECCION LATEST PRODUCTS */
+
+@media screen and (max-width: 640px){
+    .ima_Latest_Products{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
 }
