@@ -59,5 +59,50 @@ body {
     font-size: 75px;
     color: #494949;
 }
+.cir{
+    position: absolute;
+    width: 15%;
+    height: 12%;
+    border-radius: 50%;
+    background-color: #529F0F;
+    top: 1%;
+    left: 12%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70%;
+    font-weight: bold;
+    font-family: 'Lora', serif;
+    width: 15%;
+    height: 10%;
+    top: 1%;
+    left: 5%;
+    font-size: 50%;
+}
+@media screen and (max-width: 640px){
+    .cardContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card img{
+        width: 50%;
+        height: 50%;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card h3{
+        font-size: 1em;
+    }
+    .card p{
+        font-size: 12px;
+    }
 
 
+}
