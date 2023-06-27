@@ -159,7 +159,7 @@
     width: 100%;
 }
 /* Estilos carrito de compras */
-.container_header .barras .car {
+.container_header  .car {
     display: flex;
     justify-content: center;
 }
