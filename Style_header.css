@@ -20,7 +20,7 @@
 }
 .moneda {
     padding: 10px;
-    font-size: 0.8;
+    font-size: 0.8em;
     border: none;
     background: none;
     color: #000;
@@ -41,7 +41,6 @@
     display: flex;
     justify-content:space-between;
     align-items: center;
-    align-content: center;
 }
 
 .bar-btn{
@@ -130,7 +129,6 @@
     .dropdown-link{
         text-decoration: none;
         margin: 5px;
-        font-size:80%;
         color: rgb(0, 0, 0);
         font-weight:bold;
         transition: none;
@@ -138,7 +136,7 @@
     .tipo{
         order:5;
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         margin:20px;
     }
     .car{
@@ -148,7 +146,7 @@
         order:5;
         margin: 0;
         padding: 0;
-        width: 70%;
+        
     }
 }
 
